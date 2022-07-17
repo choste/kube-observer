@@ -17,3 +17,13 @@ spec:
   upgrade:
     remediation:
       remediateLastFailure: true
+  values:
+    datasources:
+      deployment.yaml:
+        apiVersion: 1
+        datasources:
+        - name: Prometheus
+          type: prometheus
+          access: proxy
+          isDefault: true
+          url: http://prometheus-server.prometheus.svc.cluster.local
