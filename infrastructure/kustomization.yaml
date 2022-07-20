@@ -4,3 +4,4 @@ resources:
   - sources
   - prometheus
   - grafana
+  - monitoring-config
